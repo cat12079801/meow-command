@@ -1,8 +1,8 @@
 {
   "name": "meow-command",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "usage testing for semantic-release",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "cat12079801 <cat12079801@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -21,6 +21,7 @@
     "@commitlint/config-conventional": "^12.1.4",
     "husky": "^7.0.1",
     "semantic-release": "^17.4.4",
+    "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   }
 }
