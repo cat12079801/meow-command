@@ -1,0 +1,36 @@
+{
+  "name": "meow-command",
+  "version": "1.0.0",
+  "description": "usage testing for semantic-release",
+  "main": "index.js",
+  "author": "cat12079801 <cat12079801@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ],
+    "branches": [
+      "master"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "husky": "^7.0.1",
+    "semantic-release": "^17.4.4",
+    "typescript": "^4.3.5"
+  }
+}
