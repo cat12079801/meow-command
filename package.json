@@ -6,6 +6,12 @@
   "author": "cat12079801 <cat12079801@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "webpack"
+  },
+  "bin": {
+    "meow": "./bin/meow-command.js"
+  },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
@@ -21,7 +27,10 @@
     "@commitlint/config-conventional": "^12.1.4",
     "husky": "^7.0.1",
     "semantic-release": "^17.4.4",
+    "ts-loader": "^9.2.3",
     "ts-node": "^10.1.0",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
   }
 }
