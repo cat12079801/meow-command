@@ -8,10 +8,10 @@ program.parse(process.argv);
 const options = program.opts();
 
 interface OutputInterface {
-    output: string;
+    emoji: string;
     text: string;
 }
-const output = {
+const output: OutputInterface = {
     'emoji': '😺',
     'text': 'にゃーん'
 }
