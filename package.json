@@ -16,7 +16,9 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
+      "@semantic-release/github",
+      "@semantic-release/changelog",
+      "@semantic-release/git"
     ],
     "branches": [
       "master"
@@ -25,6 +27,7 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "@semantic-release/changelog": "^5.0.1",
     "husky": "^7.0.1",
     "semantic-release": "^17.4.4",
     "ts-loader": "^9.2.3",
